@@ -24,7 +24,7 @@ class VorysPipeline:
                          """)
         # self.con.commit()
     def process_item(self, item, spider):
-        print(f"**************************************{item}*************************")
+        
         try:
                 name = str(item['name']).strip().lower()
                 position = str(item['position']).strip()

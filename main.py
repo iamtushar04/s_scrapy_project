@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 app =  FastAPI()
 
-scraped_data = metadata.tables['vorysdata']
+scraped_data = metadata.tables['vorysdata']  # Assuming 'vorysdata' is the name of your table in the SQLite DB
 
 class ScrapedData(BaseModel):
     name: str
